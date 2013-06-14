@@ -1,0 +1,449 @@
+/* CSS Document */
+@font-face {
+    font-family: 'SegoeUILight';
+    src: url('segoeuil.eot');
+    src: url('segoeuil.eot') format('embedded-opentype'),
+         url('segoeuil.woff') format('woff'),
+         url('segoeuil.ttf') format('truetype'),
+         url('segoeuil.svg#SegoeUILight') format('svg');
+}
+@font-face {
+    font-family: 'SegoeUISemilight';
+    src: url('segoeuisl.eot');
+    src: url('segoeuisl.eot') format('embedded-opentype'),
+         url('segoeuisl.woff') format('woff'),
+         url('segoeuisl.ttf') format('truetype'),
+         url('segoeuisl.svg#SegoeUISemilight') format('svg');
+}
+@font-face {
+    font-family: 'SegoeUISemibold';
+    src: url('seguisb.eot');
+    src: url('seguisb.eot') format('embedded-opentype'),
+         url('seguisb.woff') format('woff'),
+         url('seguisb.ttf') format('truetype'),
+         url('seguisb.svg#SegoeUISemibold') format('svg');
+}
+
+@font-face {
+    font-family: "Segoe UI Light";
+    font-weight: 200;
+    src: local("Segoe UI Light");
+}
+@font-face {
+    font-family: "Segoe UI Semi";
+    font-weight: 300;
+    src: local("Segoe UI Semilight");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 400;
+    src: local("Segoe UI");
+}
+
+
+/** RESET SETTING */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+html {
+	overflow-y: scroll;
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+a{
+text-decoration:none;
+}
+a:focus {
+	outline: thin dotted;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+audio,
+canvas,
+video {
+	display: inline-block;
+}
+audio:not([controls]) {
+	display: none;
+}
+del {
+	color: #333;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin: 24px;
+	margin-bottom: 1.714285714rem;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+small {
+	font-size: smaller;
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+/* Clearing floats */
+.clear:after,
+.wrapper:after,
+.format-status .entry-header:after {
+	clear: both;
+}
+.clear:before,
+.clear:after,
+.wrapper:before,
+.wrapper:after,
+.format-status .entry-header:before,
+.format-status .entry-header:after {
+	display: table;
+	content: "";
+}
+
+/***WRAPPER**/
+body{
+font-family: 'SegoeUILight',tahoma;
+font-size: 13px;
+}
+#body-content{
+	background: url(images/bg-nav.png) repeat-x top left; 
+	}
+	
+#wrapper{
+	width: 1000px;
+	margin:0 auto;
+	}
+	
+#header {
+	height: 100px;
+	position:relative;
+margin-bottom: 20px;
+display:block;
+	}
+	
+#header #logo{
+	position: absolute;
+	top: 10px; left: 10px;
+width: 156px; height: 83px;
+background: url(images/logo.png) no-repeat top left;
+text-indent:-9999px;
+	}
+#header .search_input{
+position: absolute;
+right: 16px;
+top: 14px;
+height: 20px;width:190px;
+padding: 5px 5px 5px 25px;
+background: url(images/icon-search.png) 8px 10px no-repeat,#fff;
+border: none;
+font-family: 'SegoeUILight',tahoma;
+}
+
+#header #navigation{
+position: absolute;
+top: 72px; left: 140px;
+}
+
+#header #navigation li{
+display:inline-block;
+padding-left: 30px;
+}
+#header #navigation li a{
+font-size: 14px;
+font-family: 'SegoeUISemibold',tahoma,serif;
+color: #fff;
+}
+#header #navigation li a:hover,#header #navigation li a.current{
+color: #fffc00;
+}
+
+#header #login-content{
+position: absolute;
+right: 14px; top: 72px;
+}
+
+#header #login-content a,#header #login-content span{
+color: #fff;
+font-size: 11px;
+}
+
+#header #login-content span{
+padding: 0px 5px;
+}
+#header #login-content a:hover{
+color: #fffc00;
+}
+
+#latest-news{
+margin-bottom: 10px;
+clear:both;
+display:block;
+float:left;
+}
+
+#latest-news .news-block{
+float:left;
+width: 240px;height:131px;
+margin-right:10px;
+margin-bottom:10px;
+}
+
+#latest-news .news-block:first-child{
+width: 500px;
+height: 272px!important;
+margin-right:10px!important;
+}
+
+#latest-news .news-block:nth-child(2n+1){
+margin-right:0px;
+}
+
+#latest-news .news-block a{
+display:block;
+width: 100%;height: 100%;
+position: relative;overflow:hidden;
+}
+
+#latest-news .news-block a h2{
+position: absolute;
+left: 0; bottom:0;
+background: rgba(0,0,0,0.8);
+padding: 10px 6px;
+color: #fff;
+font-family: 'SegoeUILight',tahoma;
+font-size: 11px;
+width: 100%;
+}
+
+#latest-news .news-block:first-child a h2{
+font-size: 20px;
+font-weight:normal;
+}
+
+#latest-news .news-block a:hover h2{
+color: #fffc00;
+}	
+
+#content{
+position: relative;
+clear:both;
+}
+
+#main-content{
+width: 690px;
+float:left;
+margin-right: 10px;
+}
+
+#main-content .block{
+width: 340px;
+float:left;
+margin-right:10px;
+margin-bottom: 20px;
+}
+
+#main-content .block:nth-child(2n){
+margin-right:0px;
+}
+
+#main-content .block .block-titles{
+background: #48a873;
+padding: 10px ;
+font-size: 26px;
+font-family: 'Segoe UI Semi ',arial,serif;;
+color :#fff;
+font-weighT:normal;
+margin-bottom: 10px;
+}
+
+#main-content .block .block-content img{
+width: 340px;
+}
+
+#main-content .block .block-content h3{
+margin: 6px 0;
+font-size: 16px;
+color: #222;
+font-weight: normal;
+}
+
+#main-content .block .block-content .content-intro{
+font-size: 13px;
+color :#555;
+line-height:20px;
+}
+#main-content .block .block-content .list-title {
+margin-top: 10px;
+}
+#main-content .block .block-content .list-title li{
+padding-bottom: 8px;
+padding-left: 10px;
+background: url(images/buble.png) no-repeat 0px 5px;
+}
+#main-content .block .block-content .list-title li a{
+color: #48a873;
+font-size: 11px;
+}
+
+#main-content .block .block-content .list-title li a:hover{
+color: #333;
+text-decoration: underline;
+}
+
+#main-content .block .block-content .view-more{
+color:#e69b09;
+}
+
+/*Sidebar*/
+
+#sidebar{
+width: 300px;
+float:right;
+}
+
+#sidebar .widget{
+margin-bottom:20px;
+}
+#sidebar .widget h2{
+border-bottom: 2px solid #7dd1a3;
+padding: 10px ;
+font-size: 26px;
+font-family: 'Segoe UI Semi ',arial,serif;;
+color :#48a873;
+font-weighT:normal;
+margin-bottom: 10px;
+}
+
+#sidebar .widget .widget-content .tab li{
+display: block;float:left;
+border-right: 1px solid #fff;
+}
+
+#sidebar .widget .widget-content .tab li a{
+display:block;
+background: #ededed;
+padding:7px 9px;
+color: #222;
+}
+
+#sidebar .widget .widget-content .tab li a.active{
+background: #7dd1a3;
+color: #fff;
+}
+
+#sidebar .widget .widget-content .tab li a:hover{
+background: #9ee3bd;
+}
+#sidebar .widget .widget-content .tab-content h3{
+padding: 6px 5px;background: #9ee3bd;
+font-size: 11px;
+}
+
+#sidebar .widget .widget-content table{
+width: 100%;
+}
+
+#sidebar .widget .widget-content table tr td{
+border: 1px solid #fff;
+padding: 5px;
+font-size: 11px;
+}
+
+#sidebar .widget .widget-content thead{
+background: #7dd1a3;
+}
+
+#sidebar .widget .widget-content tr:nth-child(even){
+background: #f1f1f1;
+}
+#sidebar .widget .widget-content td:nth-child(2),#sidebar .widget .widget-content td:nth-child(3){
+text-align:center;
+}
+
+/**FOOTER**/
+#footer{
+float:left;
+clear:both;
+color: #555;
+font-size: 14px;
+margin-bottom: 15px;
+margin-top: 10px;
+}
+
+#footer span{
+margin-right: 40px;
+}
+
+#footer a{
+color: #555;
+margin-right: 30px;
+}

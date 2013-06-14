@@ -1,0 +1,17 @@
+/* CSS Document */
+@font-face {
+    font-family: 'SegoeUILight';
+    src: url('segoeuil.eot');
+    src: url('segoeuil.eot') format('embedded-opentype'),
+         url('segoeuil.woff') format('woff'),
+         url('segoeuil.ttf') format('truetype'),
+         url('segoeuil.svg#SegoeUILight') format('svg');
+}
+@font-face {
+    font-family: 'SegoeUISemilight';
+    src: url('segoeuisl.eot');
+    src: url('segoeuisl.eot') format('embedded-opentype'),
+         url('segoeuisl.woff') format('woff'),
+         url('segoeuisl.ttf') format('truetype'),
+         url('segoeuisl.svg#SegoeUISemilight') format('svg');
+}
