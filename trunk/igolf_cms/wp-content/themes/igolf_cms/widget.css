@@ -1,0 +1,23 @@
+/* CSS Document */
+/**  COMMENTS **/
+.bwp-rc-ulist .recent-comment .recent-comment-avatar{
+	float:left;
+	margin-right: 5px;
+	}
+
+.bwp-rc-ulist .recent-comment .recent-comment-single{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	}
+.bwp-rc-ulist .recent-comment .recent-comment-single .recent-comment-author{
+	font-weight:bold;
+	color: #277f4e;	
+}
+.bwp-rc-ulist .recent-comment .recent-comment-single .recent-comment-text{
+	color: #666;	
+}
+
+.bwp-rc-ulist .recent-comment .recent-comment-single a{
+	color: #277f4e!important;
+	display:inline-block!important;
+	}
