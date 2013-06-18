@@ -17,13 +17,13 @@
 							query_posts("cat=$cat_id&post_per_page=5");
 							echo "<div class='block-content'>";
 							$post_counter = 0;
-							query_posts("showposts=6");
+							query_posts("showposts=6&cat=$cat_id");
 							if(have_posts()):while(have_posts()):the_post();
 								if(!$post_counter){
 										//first post in category?>
 									<div class="content-feature">
                                         <a href="<?php the_permalink()?>">
-                                            <?php if(has_post_thumbnail()){the_post_thumbnail();} ?>
+                                            <?php if(has_post_thumbnail()){the_post_thumbnail();}else{?><img src="<?php echo get_first_image(); ?>" /><?php } ?>
                                             <h3><?php the_title()?></h3>
                                             <div class="content-intro">
                                                 <?php the_excerpt();?>
