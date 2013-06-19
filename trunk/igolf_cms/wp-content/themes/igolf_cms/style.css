@@ -182,14 +182,14 @@ display:block;
 	
 #header #logo{
 	position: absolute;
-	top: 10px; left: 10px;
-width: 156px; height: 83px;
+	top: 6px; left: 10px;
+width: 121px; height: 48px;
 background: url(images/logo.png) no-repeat top left;
 text-indent:-9999px;
 	}
-#header .more-services{
+/*#header .more-services{
 position: absolute;
-top: 27px; left: 180px;
+top: 19px; left: 147px;
 display:block;
 width:20px; height: 20px;
 text-indent: -9999px;
@@ -199,41 +199,46 @@ cursor:pointer;
 
 #header .more-services.active{
 background: url(images/sprite-switcher-arrow.png) no-repeat bottom left;
-}
+}*/
 
 #header .services{
-background: #fff;
+/*background: #fff;
 width: 200px;
 border-radius: 4px;
 box-shaodow: 0px 1px 3px rgba(0,0,0,0.4);
--webkit-box-shaodow: 0px 1px 3px rgba(0,0,0,0.4);
+-webkit-box-shaodow: 0px 1px 3px rgba(0,0,0,0.4);*/
 position: absolute;
-top: 43px;
-left:180px;
+top: 0px;
+right:10px;
 z-index: 3;
-display:none;
 } 
 
 #header .services li{
-padding: 8px 6px;
-border-bottom: 1px dotted #e5e5e5;
+padding: 23px 15px;
+display:inline-block;
+/*border-bottom: 1px dotted #e5e5e5;*/
 }
-
-#header .services li:last-child{
-border-bottom: none;
+#header .services li:hover{
+background: #145b33;	
 }
 
 #header .services li a{
-color: #555;
+color: #fff;
 display:block;
 font-size: 13px;
+font-weight:bold;
+text-transform:uppercase;
+}
+
+#header .services li a:hover{
+text-decoration:underline;	
 }
 
 #header .search_input{
 position: absolute;
-right: 16px;
+left: 200px;
 top: 14px;
-height: 20px;width:190px;
+height: 20px;width:350px;
 padding: 5px 5px 5px 25px;
 background: url(images/icon-search.png) 8px 10px no-repeat,#fff;
 border: none;
@@ -242,7 +247,7 @@ font-family: 'SegoeUILight',tahoma;
 
 #header #navigation{
 position: absolute;
-top: 72px; left: 140px;
+top: 72px; left: 0px;
 }
 
 #header #navigation ul#nav>li{
@@ -383,7 +388,7 @@ margin-bottom: 10px;
 }
 
 #main-content .block .block-content img{
-width:340px;height:150px;
+width: 340px;
 }
 
 #main-content .block .block-content h3{
@@ -641,7 +646,7 @@ color: #7dd1a3;
 .listpost .newsContent{
 	font-size: 14px;
 	padding: 0px 10px 10px 20px;
-	line-height: 24px;
+	line-height: 20px;
 	font-family:arial,verdana,serif;
 	}
 .listpost .newsContent .thumbnail{
@@ -782,7 +787,6 @@ text-shadow:
 	}
 #sidebar ul li{
 	padding: 8px;
-        overflow:hidden;
 	}
 #sidebar ul li a{
 	color: #333;	
