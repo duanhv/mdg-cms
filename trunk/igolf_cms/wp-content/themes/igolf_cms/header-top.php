@@ -1,12 +1,11 @@
 <div id="header">
         		<a href="<?php echo home_url( '/' ); ?>" title="<?php esc_attr(get_bloginfo('name','display')) ?>"><h1 id="logo">Igolf.vn News</h1></a>
                 
-                <span class="more-services">Toogle</span>
+                <!--<span class="more-services">Toogle</span>-->
                 <ul class="services">
-                	<li><a href="#">iGolf News</a></li>
-                	<li><a href="#">Igolf -  Social Network</a></li>
-                    <li><a href="#">iGolf - Shop for Golfer</a></li>
-                    
+                	<li><a href="#">News</a></li>
+                	<li><a href="#">Social</a></li>
+                    <li><a href="#">Shop</a></li>
                 </ul>
                 <?php get_search_form()?>
                 <div id="navigation">
