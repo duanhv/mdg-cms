@@ -782,6 +782,7 @@ text-shadow:
 	}
 #sidebar ul li{
 	padding: 8px;
+        overflow:hidden;
 	}
 #sidebar ul li a{
 	color: #333;	
