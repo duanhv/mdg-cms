@@ -787,7 +787,6 @@ text-shadow:
 	}
 #sidebar ul li{
 	padding: 8px;
-	overflow:hidden;
 	}
 #sidebar ul li a{
 	color: #333;	
@@ -800,4 +799,52 @@ text-shadow:
 }
 #sidebar ul li:hover a{
 color: #fff;	
+}
+
+/*SEARCH PAGE*/
+.search-box h2{
+font-size: 20px;
+}
+.search-box h3{
+font-size: 24px;
+padding: 10px;
+font-weight:normal;
+border-bottom: 1px solid #e7e7e7;
+}
+.search-box h3 span{
+color:#999;
+}
+
+.search-box .search_listpost{
+border-bottom: 1px solid #e7e7e7;
+padding: 10px;
+color: #333;
+overflow:hidden;
+}
+
+.search-box .search_listpost h4{
+font-size: 15px;
+margin-bottom: 8px;
+}
+
+.search-box .search_listpost h4 a{
+color:#277F4E;
+}
+
+.search-box .search_listpost .newsContent_intro img{
+width: 64px;height:64px;
+border: 1px solid #ddd;
+padding: 4px;
+border-radius: 3px;
+float:left;
+margin-right: 10px;
+}
+
+.search-box .search_listpost .newsContent_intro {
+line-height:18px;
+}
+
+.search-box .search_listpost .newsContent_intro .newsDate_intro{
+color: #999;
+font-size: 11px;
 }
