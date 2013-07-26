@@ -4,7 +4,7 @@
 		<div id="wrapper">
         	<?php get_header('top'); ?>
             <?php $mo = detectmobile();
-            		$mo = true; ?>
+            		 ?>
             <div id="content">
             	<div id="main-content">
                 	<?php

@@ -9,7 +9,6 @@
             	<div id="main-content">
             	<?php 
             	$mo = detectmobile();
-            	$mo = true;
             	if($mo==true){
 					
 					while(have_posts()) : the_post();?>
