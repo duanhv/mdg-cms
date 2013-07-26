@@ -40,11 +40,11 @@
         	});
 		
 		//show menu
-		//$('#nav>li').hover(function(){
-		//	$(this).find('.sub-menu').stop().slideDown(400);
-		//},function(){
-		//	$(this).find('.sub-menu').stop().slideUp(400);
-		//});
+		$('#nav>li').hover(function(){
+			$(this).find('.sub-menu').stop().slideDown(400);
+		},function(){
+			$(this).find('.sub-menu').stop().slideUp(400);
+		});
 		
 		
 		//login form
