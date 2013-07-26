@@ -1,19 +1,12 @@
 <?php get_header(); ?>
 <body>
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 	<div id="body-content">
 		<div id="wrapper">
         	<?php get_header('top'); ?>
             
             <div id="content">
+            	<div id="main-content">
             	<?php 
             	$mo = detectmobile();
             	$mo = true;
@@ -23,7 +16,6 @@
 						<article class='homepost'>
 							<h2><a href="<?php the_permalink()?>"><?php the_title();?></a></h2>	
 							<ul class="postmetadata">
-							
 								<li class='postmetadata_date'><?php the_date('M d Y');?></li>
 								<li class='postmedata_category'><?php the_category(',')?></li>
 								<li class='postmetadata_comments'><?php comments_number( 'no responses', 'one response', '% responses' ); ?></li>
@@ -35,7 +27,8 @@
 						</article>						
 						
 				<?php
-					endwhile;?>		
+					endwhile;?>
+					</div>		
 					<div id="comment-template">
 
 						<?php  comments_template(); ?>
