@@ -22,7 +22,7 @@
 							</ul>
 							<div class="homepost-content">
 								<?php if(has_post_thumbnail()){the_post_thumbnail();}else{?><img src="<?php echo get_first_image(); ?>" /><?php } ?>
-							    <?php  the_excerpt();?>
+							    <?php  the_content();?>
 							</div>
 						</article>						
 						
