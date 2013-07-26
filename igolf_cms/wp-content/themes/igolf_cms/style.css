@@ -255,6 +255,7 @@ display:inline-block;
 padding-left: 30px;
 position:relative;
 }
+
 #header #navigation ul#nav>li a{
 font-size: 14px;
 font-family: 'SegoeUISemilight',tahoma,serif;
@@ -269,15 +270,13 @@ color: #fffc00;
 	top: 28px;left: 0;
 	width: 160px;
 	z-index: 10;
-display:none;
+	display:none;
 	}
 #header #navigation .sub-menu li{
 		background :#48a873;
-padding: 8px
+		padding: 8px
 }
-#header #navigation .sub-menu li:hover{
-background: #277f4e;
-}
+
 #header #navigation .sub-menu li:hover a{
 color: #fffc00;
 }
@@ -848,3 +847,24 @@ line-height:18px;
 color: #999;
 font-size: 11px;
 }
+.navigation {
+	margin-bottom: 40px;
+	margin-top: 15px;
+	float:left;
+}
+.navigation li{
+float:left; display:block;
+margin-right: 5px;
+}
+.navigation li span,.navigation li a{
+padding: 6px 10px;
+border: 1px solid #e5e5e5;
+color: #666;
+display:block;
+}
+.navigation li a:hover,.navigation li span:hover,.navigation li span.current{
+background: #277F4E;
+border: 1px solid #1C6A3E;
+color: yellow;
+}
+.selectnav { display: none; }

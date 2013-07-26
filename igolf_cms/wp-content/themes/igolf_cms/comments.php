@@ -14,7 +14,7 @@
 <!-- Comments code provided by christianmontoya.com -->
 
 <?php if (!empty($post->post_password) && $_COOKIE['wp-postpass_'.COOKIEHASH]!=$post->post_password) : ?>
-    <p id="comments-locked">Nhập mật khẩu của bạn để xem bình luận.</p>
+    <p id="comments-locked">Nháº­p máº­t kháº©u cá»§a báº¡n Ä‘á»ƒ xem bÃ¬nh luáº­n.</p>
 <?php return; endif; ?>
 
 <?php //if (pings_open()) : ?>
@@ -31,8 +31,8 @@
     /* Enter your email and name as they appear in the admin options */
     $author = array(
             "highlight" => "highlight",
-            "email" => "Nhập Email của bạn",
-            "name" => "Nhập tên của bạn"
+            "email" => "Nháº­p Email cá»§a báº¡n",
+            "name" => "Nháº­p tÃªn cá»§a báº¡n"
     ); 
 
     /* Count the totals */
@@ -131,9 +131,9 @@
     /* No comments at all means a simple message instead */ 
 ?>
 
-    <h2 class="comments-header">Chưa có bình luận nào</h2>
+    <h2 class="comments-header">ChÆ°a cÃ³ bÃ¬nh luáº­n nÃ o</h2>
 
-    <p>Hãy là người đầu tiên bình luận về sản phẩm nhé!</p>
+    <p>HÃ£y lÃ  ngÆ°á»�i Ä‘áº§u tiÃªn bÃ¬nh luáº­n vá»� sáº£n pháº©m nhÃ©!</p>
     
 <?php endif; ?>
 
@@ -148,33 +148,33 @@
 
     <div id="comments-form">
     
-    <h2 id="comments-header">Bình luận về sản phẩm</h2>
+    <h2 id="comments-header">Bình luận về bài viết</h2>
     
     <?php if (get_option('comment_registration') && !$user_ID ) : ?>
-        <p id="comments-blocked">Bạn cần phải<a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=
-        <?php the_permalink(); ?>">Đăng nhập</a> để đăng bình luận.</p>
+        <p id="comments-blocked">Báº¡n cáº§n pháº£i<a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=
+        <?php the_permalink(); ?>">Ä�Äƒng nháº­p</a> Ä‘á»ƒ Ä‘Äƒng bÃ¬nh luáº­n.</p>
     <?php else : ?>
 
     <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 
     <?php if ($user_ID) : ?>
     
-    <p>Bạn đang đăng nhập với tên <a href="<?php echo get_option('siteurl<img src="C:/Users/luuducthuy/Desktop/hotline.png" />'); ?>/wp-admin/profile.php">
+    <p>Báº¡n Ä‘ang Ä‘Äƒng nháº­p vá»›i tÃªn <a href="<?php echo get_option('siteurl<img src="C:/Users/luuducthuy/Desktop/hotline.png" />'); ?>/wp-admin/profile.php">
         <?php echo $user_identity; ?></a>. 
         <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" 
-        title="Đăng xuất khỏi tài khoản này">Đăng xuất</a>
+        title="Ä�Äƒng xuáº¥t khá»�i tÃ i khoáº£n nÃ y">Ä�Äƒng xuáº¥t</a>
     </p>
     
     <?php else : ?>
-    
+    	<label for="author">Tên<?php if ($req) _e(' (required)'); ?></label></p>
         <p><input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" />
-        <label for="author">Tên<?php if ($req) _e(' (required)'); ?></label></p>
         
-        <p><input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" />
         <label for="email">E-mail (will not be published)<?php if ($req) _e(' (required)'); ?></label></p>
+        <p><input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" />
         
-        <p><input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" />
         <label for="url">Địa chỉ website</label></p>
+        <p><input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" />
+        
     
     <?php endif; ?>
 
@@ -203,5 +203,5 @@
 <?php endif; // If registration required and not logged in ?>
 
 <?php else : // Comments are closed ?>
-    <p id="comments-closed">Xin lỗi! Bình luận về bài viết này đã bị khóa.</p>
+    <p id="comments-closed">Xin lá»—i! BÃ¬nh luáº­n vá»� bÃ i viáº¿t nÃ y Ä‘Ã£ bá»‹ khÃ³a.</p>
 <?php endif; ?> 

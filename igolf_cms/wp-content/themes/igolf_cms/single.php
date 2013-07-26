@@ -14,6 +14,35 @@
         	<?php get_header('top'); ?>
             
             <div id="content">
+            	<?php 
+            	$mo = detectmobile();
+            	$mo = true;
+            	if($mo==true){
+					
+					while(have_posts()) : the_post();?>
+						<article class='homepost'>
+							<h2><a href="<?php the_permalink()?>"><?php the_title();?></a></h2>	
+							<ul class="postmetadata">
+							
+								<li class='postmetadata_date'><?php the_date('M d Y');?></li>
+								<li class='postmedata_category'><?php the_category(',')?></li>
+								<li class='postmetadata_comments'><?php comments_number( 'no responses', 'one response', '% responses' ); ?></li>
+							</ul>
+							<div class="homepost-content">
+								<?php if(has_post_thumbnail()){the_post_thumbnail();}else{?><img src="<?php echo get_first_image(); ?>" /><?php } ?>
+							    <?php  the_excerpt();?>
+							</div>
+						</article>						
+						
+				<?php
+					endwhile;?>		
+					<div id="comment-template">
+
+						<?php  comments_template(); ?>
+            
+           		   </div><!-- End #comment-template -->
+					
+            	<?php }else{?>
             	<div id="main-content">
                 	<?php
 						if(have_posts()) : while(have_posts()) : the_post(); ?>
@@ -49,7 +78,9 @@
             
            		   </div><!-- End #comment-template -->
                 </div>
-                 <?php get_sidebar()?>   
+                <?php  } ?>
+                  <?php 
+                    if($mo==false){get_sidebar();}?> 
             </div>
             
             <?php get_footer() ?>
