@@ -159,10 +159,10 @@
 
     <?php if ($user_ID) : ?>
     
-    <p>Báº¡n Ä‘ang Ä‘Äƒng nháº­p vá»›i tÃªn <a href="<?php echo get_option('siteurl<img src="C:/Users/luuducthuy/Desktop/hotline.png" />'); ?>/wp-admin/profile.php">
+    <p>You're login with <a href="<?php echo get_option('siteurl<img src="C:/Users/luuducthuy/Desktop/hotline.png" />'); ?>/wp-admin/profile.php">
         <?php echo $user_identity; ?></a>. 
         <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" 
-        title="Ä�Äƒng xuáº¥t khá»�i tÃ i khoáº£n nÃ y">Ä�Äƒng xuáº¥t</a>
+        title="Ä�Äƒng xuáº¥t khá»�i tÃ i khoáº£n nÃ y">Logout</a>
     </p>
     
     <?php else : ?>
