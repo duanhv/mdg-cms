@@ -21,7 +21,6 @@
 								<li class='postmetadata_comments'><?php comments_number( 'no responses', 'one response', '% responses' ); ?></li>
 							</ul>
 							<div class="homepost-content">
-								<?php if(has_post_thumbnail()){the_post_thumbnail();}else{?><img src="<?php echo get_first_image(); ?>" /><?php } ?>
 							    <?php  the_content();?>
 							</div>
 						</article>						
