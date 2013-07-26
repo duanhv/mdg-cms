@@ -11,7 +11,6 @@
 <?php 
 	detectmobile();
 	$mobile = detectmobile();
-	$mobile = true;
 	if($mobile==true){?>
 		<link href="<?php bloginfo('template_url')?>/mobile.css" rel="stylesheet" type="text/css" />		
 <?php 	}

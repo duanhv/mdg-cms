@@ -5,7 +5,6 @@
         	<?php get_header('top'); ?>
             <?php
             	$mo = detectmobile();
-            	$mo = true;
             	if($mo == false){ 
             		include(TEMPLATEPATH.'/newspages.php');
             	}
