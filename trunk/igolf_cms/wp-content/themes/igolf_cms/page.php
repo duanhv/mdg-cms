@@ -57,7 +57,7 @@
 					}else{
 					echo "<div id='main-content'>";
 					$paged = get_query_var('paged');
-					query_posts('posts_per_page=2&paged='.$paged);
+					query_posts('posts_per_page=2&paged=$paged');
 					while(have_posts()) : the_post();
 					?>
 						<article class='homepost'>

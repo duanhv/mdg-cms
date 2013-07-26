@@ -7,21 +7,23 @@
                 	<li><a href="#">Social</a></li>
                     <li><a href="#">Shop</a></li>
                 </ul>
-                <?php get_search_form()?>
+                
+                <?php
+                		get_search_form();
+                ?>
                 <div id="navigation">
-                	<?php
-                wp_nav_menu(array('theme_location' => 'primary-menu','fallback_cb' => 'alert_menu','container'=>'','items_wrap' => '<ul id="nav">%3$s</ul>','menu_id'=> '',));
-            		?>
+                	<div class="dropdown">
+                		<?php wp_nav_menu(array('theme_location' => 'primary-menu','fallback_cb' => 'alert_menu','container'=>'','items_wrap' => '<ul id="nav">%3$s</ul>','menu_id'=> '',));?>
+                	</div>
                 </div><!-- End #navigation -->
                 
                 <div id="login-content">
-                	<a href="#" class="login">Sign in</a><span>//</span> <a href="#">Creat account?</a>
-                    
+                	<a href="#" class="login">Sign in</a><span>//</span> <a href="#">Creat account?</a> 
                 </div><!-- #login-content -->
                 <div id="login-block">
                 <div id="login">
                 		<span class="close">X</span>
-                    	<h2>Đăng nhập iGolf.vn</h2>
+                    	<h2>igolf</h2>
                     	<form name="loginform" id="loginform" action="http://localhost:88/igolf_cms/wp-login.php" method="post">
                         	<p>
                             	<label>Username: </label><br />
@@ -32,11 +34,11 @@
                                 <input type="text" name="pwd" id="pwd" tabindex="2" class="txt" />
                             </p>
                             <p class="submit">
-                            	<input type="submit" name="submit" id="submit" value="Đăng nhập iGolf.vn" />
+                            	<input type="submit" name="submit" id="submit" value="Ä�Äƒng nháº­p iGolf.vn" />
                                 <input type="hidden" name="redirect_to" value="wp-admin/" />
                             </p>
                         </form>
-                        <a href="http://locahost:88/igolf_cms/wp-login?action=lostpassword">Quên mật khẩu?</a>
+                        <a href="http://locahost:88/igolf_cms/wp-login?action=lostpassword">Forgot password?</a>
                     </div>
                     </div>
         	</div><!-- #header -->
