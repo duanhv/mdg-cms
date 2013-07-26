@@ -14,7 +14,7 @@
 <!-- Comments code provided by christianmontoya.com -->
 
 <?php if (!empty($post->post_password) && $_COOKIE['wp-postpass_'.COOKIEHASH]!=$post->post_password) : ?>
-    <p id="comments-locked">Nháº­p máº­t kháº©u cá»§a báº¡n Ä‘á»ƒ xem bÃ¬nh luáº­n.</p>
+    <p id="comments-locked">Input your password to view comments.</p>
 <?php return; endif; ?>
 
 <?php //if (pings_open()) : ?>
@@ -31,8 +31,8 @@
     /* Enter your email and name as they appear in the admin options */
     $author = array(
             "highlight" => "highlight",
-            "email" => "Nháº­p Email cá»§a báº¡n",
-            "name" => "Nháº­p tÃªn cá»§a báº¡n"
+            "email" => "Your Email",
+            "name" => "Your Name"
     ); 
 
     /* Count the totals */
@@ -131,9 +131,9 @@
     /* No comments at all means a simple message instead */ 
 ?>
 
-    <h2 class="comments-header">ChÆ°a cÃ³ bÃ¬nh luáº­n nÃ o</h2>
+    <h2 class="comments-header">No Comments</h2>
 
-    <p>HÃ£y lÃ  ngÆ°á»�i Ä‘áº§u tiÃªn bÃ¬nh luáº­n vá»� sáº£n pháº©m nhÃ©!</p>
+    <p>Let's first person comments into this article!</p>
     
 <?php endif; ?>
 
@@ -148,11 +148,11 @@
 
     <div id="comments-form">
     
-    <h2 id="comments-header">Bình luận về bài viết</h2>
+    <h2 id="comments-header">Comments</h2>
     
     <?php if (get_option('comment_registration') && !$user_ID ) : ?>
-        <p id="comments-blocked">Báº¡n cáº§n pháº£i<a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=
-        <?php the_permalink(); ?>">Ä�Äƒng nháº­p</a> Ä‘á»ƒ Ä‘Äƒng bÃ¬nh luáº­n.</p>
+        <p id="comments-blocked">You need<a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=
+        <?php the_permalink(); ?>">Login</a> to comments.</p>
     <?php else : ?>
 
     <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
